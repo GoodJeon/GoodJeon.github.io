@@ -1,13 +1,13 @@
 ---
 layout: posts
 comments: true
-title:  "[Git]Git과 GitHub의 기초"
-categories: Programming
-tag: Git
+title:  "Git과 GitHub의 기초 사용법"
+categories: etc
+tag: [git, github, git 사용법]
 toc: true
 toc_sticky: true
 date: 2021-12-16
-last_modified_at: 2021-12-23
+last_modified_at: 2021-12-24
 ---
 
 **[Noitce]** 고쳐야하거나 틀린 것이 있으면 말씀해주세요!
