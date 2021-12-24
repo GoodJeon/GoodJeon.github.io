@@ -3,7 +3,7 @@ layout: posts
 comments: true
 title:  "Git과 GitHub의 기초 사용법"
 categories: etc
-tag: [git, github, git 사용법]
+tag: [Git, Github, Git 사용법]
 toc: true
 toc_sticky: true
 date: 2021-12-16
