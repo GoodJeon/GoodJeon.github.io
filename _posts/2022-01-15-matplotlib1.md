@@ -1,7 +1,7 @@
 ---
 layout: posts
 comments: true
-title: "[Pandas]matplotlib 요약"
+title: "[Matplotlib]기초 요약"
 categories: Python
 tag: [python, 파이썬, matplotlib, 데이터 시각화]
 toc: true
