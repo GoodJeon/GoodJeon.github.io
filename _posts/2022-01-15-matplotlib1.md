@@ -103,7 +103,7 @@ else:
 - xlabel() : x축라벨(값)
 - ylabel() : y축라벨(값)
 - grid() : 그래프 배경으로 grid 사용 결정 함수
-![image](https://user-images.githubusercontent.com/75322297/149467530-8d80809b-fb45-4cb5-b3a0-39a2772c5bc5.png)
+![image](https://user-images.githubusercontent.com/75322297/149467530-8d80809b-fb45-4cb5-b3a0-39a2772c5bc5.png)  
 사진 출처 : [https://matplotlib.org/stable/_images/anatomy.png](https://matplotlib.org/stable/_images/anatomy.png)
 
 ### 그래프 속성
@@ -250,7 +250,7 @@ plt.show()
 
 
 ​    
-![png](output_24_0.png)
+![png](/assets/images/output_24_0.png)
 ​    
 
 
@@ -301,7 +301,7 @@ plt.show()
 
 
 ​    
-![png](output_29_0.png)
+![png](/assets/images/output_29_0.png)
 ​    
 
 
@@ -328,7 +328,7 @@ plt.show()
 
 
 ​    
-![png](output_31_0.png)
+![png](/assets/images/output_31_0.png)
 ​    
 
 
@@ -364,7 +364,7 @@ plt.show()
 
 
 ​    
-![png](output_34_0.png)
+![png](/assets/images/output_34_0.png)
 ​    
 
 
@@ -393,7 +393,7 @@ plt.show()
 
 
 ​    
-![png](output_36_0.png)
+![png](/assets/images/output_36_0.png)
 ​    
 
 
@@ -418,7 +418,7 @@ plt.show()
 
 
 ​    
-![png](output_38_0.png)
+![png](/assets/images/output_38_0.png)
 ​    
 
 
@@ -445,7 +445,7 @@ plt.show()
 
 
 ​    
-![png](output_40_0.png)
+![png](/assets/images/output_40_0.png)
 ​    
 
 
@@ -477,7 +477,7 @@ plt.show()
 
 
 ​    
-![png](output_42_0.png)
+![png](/assets/images/output_42_0.png)
 ​    
 
 
@@ -502,7 +502,7 @@ plt.show()
 
 
 ​    
-![png](output_46_0.png)
+![png](/assets/images/output_46_0.png)
 ​    
 
 
@@ -519,7 +519,7 @@ plt.show()
 
 
 ​    
-![png](output_48_0.png)
+![png](/assets/images/output_48_0.png)
 ​    
 
 
@@ -548,7 +548,7 @@ plt.show()
 
 
 ​    
-![png](output_50_0.png)
+![png](/assets/images/output_50_0.png)
 ​    
 
 
@@ -569,7 +569,7 @@ plt.show()
 
 
 ​    
-![png](output_52_0.png)
+![png](/assets/images/output_52_0.png)
 ​    
 
 
@@ -593,7 +593,7 @@ plt.show()
 
 
 ​    
-![png](output_55_0.png)
+![png](/assets/images/output_55_0.png)
 ​    
 
 
@@ -627,7 +627,7 @@ plt.show()
 
 
 ​    
-![png](output_59_0.png)
+![png](/assets/images/output_59_0.png)
 ​    
 
 
@@ -658,6 +658,6 @@ plt.show()
 
 
 ​    
-![png](output_62_0.png)
+![png](/assets/images/output_62_0.png)
 ​    
 
