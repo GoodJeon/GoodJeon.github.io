@@ -25,6 +25,7 @@ layout: single
 
 ## Skills(기술)
 - Python
+- HTML, CSS, JS(초보자 수준)
 - SQL
 
 ## Certificates & License(자격증)
@@ -40,3 +41,5 @@ layout: single
 ## Experiences(경험)
 
 ## Projects(프로젝트)
+1. 서울시 소상공 상권 분석 시각화 및 창업자를 위한 상권 평가
+   - [https://github.com/GoodJeon/MPJ_team6](https://github.com/GoodJeon/MPJ_team6)
