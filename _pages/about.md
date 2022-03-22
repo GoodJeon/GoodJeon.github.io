@@ -43,3 +43,5 @@ layout: single
 ## Projects(프로젝트)
 1. 서울시 소상공 상권 분석 시각화 및 창업자를 위한 상권 평가
    - [https://github.com/GoodJeon/MPJ_team6](https://github.com/GoodJeon/MPJ_team6)
+
+2. 프로젝트 준비중
