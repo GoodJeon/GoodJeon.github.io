@@ -44,4 +44,8 @@ layout: single
 1. 서울시 소상공 상권 분석 시각화 및 창업자를 위한 상권 평가
    - [https://github.com/GoodJeon/MPJ_team6](https://github.com/GoodJeon/MPJ_team6)
 
-2. 프로젝트 준비중
+2. 교통사고다발지역 주변 시설 분석을 통한 사고유형 유추 및 교통 인프라 재고의 필요성
+   - [https://github.com/cshun1006/DI](https://github.com/cshun1006/DI)
+
+3. 주제 선정아직 안함
+   - [https://github.com/codnjs3575/Final_Team04](https://github.com/codnjs3575/Final_Team04)
