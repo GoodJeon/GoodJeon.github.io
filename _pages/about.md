@@ -25,7 +25,8 @@ layout: single
 
 ## Skills(기술)
 - Python
-- HTML, CSS, JS(초보자 수준)
+- Django
+- HTML, CSS, JS(미약)
 - SQL
 
 ## Certificates & License(자격증)
@@ -47,5 +48,5 @@ layout: single
 2. 교통사고다발지역 주변 시설 분석을 통한 사고유형 유추 및 교통 인프라 재고의 필요성
    - [https://github.com/cshun1006/DI](https://github.com/cshun1006/DI)
 
-3. 주제 선정아직 안함
+3. 서울시 맛집 공유 플랫폼 먹잘알😋
    - [https://github.com/codnjs3575/Final_Team04](https://github.com/codnjs3575/Final_Team04)
