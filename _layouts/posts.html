@@ -4,6 +4,10 @@ layout: archive
 
 {{ content }}
 
+<!-- 구글애드센스 적용도전 -->
+{% include ggad.html %}
+
+
 <ul class="taxonomy__index">
   {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
