@@ -10,7 +10,7 @@ toc: true
 toc_icon: "cog"
 toc_sticky: true
 date: 2022-09-14
-last_modified_at: 2022-09-14
+last_modified_at: 2022-10-04
 ---
 
 
@@ -259,4 +259,35 @@ last_modified_at: 2022-09-14
                 new_s += i[j].lower()
         new_s_list.append(new_s)
     return ' '.join(new_s_list)
+  ```
+
+  * 3진법 뒤집기
+  ```python
+  def solution(n):
+    # 3진법 수를 담을 문자열 생성
+    three = ''
+
+    # n이 0보다 클 때까지 반복
+    while n:
+        # divmod를 사용해서 몫은 n에 나머지는 mod에 저장
+        n, mod = divmod(n, 3)
+    
+        # 나머지수를 문자열에 더해주자
+        three += str(mod)
+
+    # int를 사용해 3진법 수를 10진법 수로 출력
+    three = int(three, 3)
+    return three
+  ```
+
+  * 예산
+  ```python
+  def solution(d, budget):
+    d.sort()
+    count = 0 
+    for i in range(len(d)):
+        if budget >= d[i]:
+            count += 1
+            budget -= d[i]
+    return count
   ```
