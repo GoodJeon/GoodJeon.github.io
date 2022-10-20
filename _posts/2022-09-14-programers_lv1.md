@@ -10,7 +10,7 @@ toc: true
 toc_icon: "cog"
 toc_sticky: true
 date: 2022-09-14
-last_modified_at: 2022-10-04
+last_modified_at: 2022-10-20
 ---
 
 
@@ -290,4 +290,65 @@ last_modified_at: 2022-10-04
             count += 1
             budget -= d[i]
     return count
+  ```
+
+  * 시저암호
+  ```python
+  def solution(s, n):
+    # 빈 문자열 생성
+    answer = ''
+    # 문자열 요소를 반복
+    for i in s:
+        # 공백이면 공백을 추가
+        if i == ' ':
+            answer += ' '
+        # 소문자이면서 아스키코드가 122보다 크다면 n을 더하고 6을 빼준다.
+        elif i.islower() and ord(i)+n > 122:
+            answer += chr(ord(i) + n - 26)
+        # 대문자이면서 아스키코드가 90보다 크다면 n을 더하고 26을 빼준다.
+        elif i.isupper() and ord(i)+n > 90:
+            answer += chr(ord(i) + n - 26)
+        # 그게 아니라면 그냥 n만큼 더해주고 문자열에 추가
+        else:
+            answer += chr(ord(i) + n)
+    return answer
+  ```
+  
+  * [1차] 비밀지도
+  ```python
+  def solution(n, arr1, arr2):
+    answer = []
+    # 지도1, 2를 동시에 반복
+    for i, j in zip(arr1, arr2):
+        # 2진법으로 변환해서 OR을 사용
+        a = bin(i | j)
+        # 앞에 0b라는 문자열을 빼주기
+        a = a[2:]
+        # 만약 주어받은 n보다 문자열이 짧다면,
+        if len(a) < n:
+            # n에서 문자열의 길이만큼 빼주고 그만큼 공백을 생성해준 후에 문자열을 더해준다.
+            a = ' ' * (n - len(a)) + a
+        # 그리고 0은 공백으로
+        a = a.replace('0', ' ')
+        # 1은 #으로 교체해준다,
+        a = a.replace('1', '#')
+        # 그리고 answer 리스트에 추가
+        answer.append(a)
+    return answer
+  ```
+
+  * 최소직사각형
+  ```python
+  def solution(sizes):
+    max_w = 0
+    max_h = 0
+    for i in sizes:
+        i.sort()
+        if i[0] > max_w:
+            max_w = i[0]
+        if i[1] > max_h:
+            max_h = i[1]
+    
+    answer = max_w * max_h
+    return answer
   ```
