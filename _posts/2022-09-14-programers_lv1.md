@@ -352,3 +352,80 @@ last_modified_at: 2022-10-20
     answer = max_w * max_h
     return answer
   ```
+  
+  * 문자열 내마음대로 정렬하기
+  ```python
+  def solution(strings, n):
+    answer = sorted(strings, key=lambda x: (x[n],x))
+    return answer
+  ```
+
+  * K번째 수
+  ```python
+  def solution(array, commands):
+    answer = []
+    for n in range(len(commands)):
+        i = commands[n][0]
+        j = commands[n][1]
+        k = commands[n][2]
+        ans = sorted(array[i-1:j])[k-1]
+        answer.append(ans)
+    return answer
+  ```
+
+  * 숫자 문자열과 영단어
+  ```python
+  def solution(s):
+    numbers = {'zero':0, 'one':1, 'two':2, 'three':3, 'four':4,
+    'five':5, 'six':6, 'seven':7, 'eight':8, 'nine':9}
+    str_tmp = ''
+    string = ''
+    for i in s:
+        if i.isdigit():
+            string += str(i)
+        else:
+            str_tmp += i
+        
+        if str_tmp in list(numbers.keys()):
+            string += str(numbers[str_tmp])
+            str_tmp = ''
+    answer = int(string)
+
+    return answer
+  ```
+
+  * 두 개 뽑아서 더하기
+  ```python
+  def solution(numbers):
+    answer = []
+    for i in range(len(numbers)-1):
+        for j in range(i+1, len(numbers)):
+            answer.append(numbers[i]+numbers[j])
+    answer = sorted(list(set(answer)))
+
+    return answer
+  ```
+
+  * 삼총사
+  ```python
+  def solution(number):
+    answer = 0
+
+    for i in range(len(number)-2):
+        for j in range(i+1, len(number)-1):
+            for k in range(j+1, len(number)):
+                if number[i] + number[j] + number[k] == 0:
+                    answer += 1
+    
+    return answer
+  ```
+
+  * 2016년
+  ```python
+  import datetime as dt
+  def solution(a, b):
+    days = ['MON','TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
+    date = f'2016-{a}-{b}'
+    n = dt.datetime.strptime(date, '%Y-%m-%d').weekday()
+    return days[n]
+  ```
