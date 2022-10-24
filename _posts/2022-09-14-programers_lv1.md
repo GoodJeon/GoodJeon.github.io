@@ -352,7 +352,15 @@ last_modified_at: 2022-10-20
     answer = max_w * max_h
     return answer
   ```
+<<<<<<< Updated upstream
   
+=======
+<<<<<<< HEAD
+
+=======
+  
+>>>>>>> dd441b28ee2b758b4e140bca8d310bcd624cefbc
+>>>>>>> Stashed changes
   * 문자열 내마음대로 정렬하기
   ```python
   def solution(strings, n):
@@ -429,3 +437,94 @@ last_modified_at: 2022-10-20
     n = dt.datetime.strptime(date, '%Y-%m-%d').weekday()
     return days[n]
   ```
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+  * 폰켓몬
+  ```python
+  def solution(nums):
+    variable = len(list(set(nums)))
+    select = len(nums)/2
+
+    if variable > select:
+        return select
+    else:
+        return variable
+  ```
+
+* 소수 찾기
+```python
+# 에라토스의 체를 이용해야 시간초과 X
+def solution(n):
+    eratos = [True] * (n+1)
+    eratos[0] = False
+    eratos[1] = False
+
+    for i in range(n+1):
+        if eratos[i]:
+            for j in range(i*2, n+1, i):
+                eratos[j] = False
+    
+    answer = eratos.count(True)
+
+    return answer
+
+```
+
+* 모의고사
+```python
+def solution(answers):
+    answer = []
+    st1 = [1,2,3,4,5]
+    st2 = [2,1,2,3,2,4,2,5]
+    st3 = [3,3,1,1,2,2,4,4,5,5]
+
+    a_st1, a_st2, a_st3 = 0, 0, 0
+
+    for i in range(len(answers)):
+        if answers[i] == st1[i%5]:
+            a_st1 += 1
+        if answers[i] == st2[i%8]:
+            a_st2 += 1
+        if answers[i] == st3[i%10]:
+            a_st3 += 1
+        
+    point = [a_st1, a_st2, a_st3]
+    
+    for i in range(3):
+        if point[i] == max(point):
+            answer.append(i+1)
+
+    return answer
+
+```
+
+* 소수 만들기
+```python
+def solution(nums):
+    answer = 0
+    sums = []
+
+    for i in range(len(nums)-2):
+        for j in range(i+1, len(nums)-1):
+            for k in range(j+1, len(nums)):
+                sums.append(nums[i] + nums[j] + nums[k])
+
+    eratos = [True] * 10001
+    eratos[0], eratos[1] = False, False
+    
+    for i in range(2, 10001):
+        if eratos[i]:
+            for j in range(i*2, 10001, i):
+                eratos[j] = False
+
+    for i in sums:
+        if eratos[i]:
+            answer += 1
+    
+    return answer
+```
+=======
+>>>>>>> dd441b28ee2b758b4e140bca8d310bcd624cefbc
+>>>>>>> Stashed changes
