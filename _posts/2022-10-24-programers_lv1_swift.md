@@ -33,7 +33,7 @@ last_modified_at: 2022-10-24
   }
   ```
 
-  * 평균 구하기
+* 평균 구하기
   ```swift
   func solution(_ arr:[Int]) -> Double {
     var sum: Int = 0

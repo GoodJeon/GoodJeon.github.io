@@ -437,9 +437,7 @@ last_modified_at: 2022-10-24
     n = dt.datetime.strptime(date, '%Y-%m-%d').weekday()
     return days[n]
   ```
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 
   * 폰켓몬
   ```python
@@ -525,6 +523,3 @@ def solution(nums):
     
     return answer
 ```
-=======
->>>>>>> dd441b28ee2b758b4e140bca8d310bcd624cefbc
->>>>>>> Stashed changes
