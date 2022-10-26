@@ -261,7 +261,7 @@ last_modified_at: 2022-10-26
     return ' '.join(new_s_list)
   ```
 
-  * 3진법 뒤집기
+* 3진법 뒤집기
   ```python
   def solution(n):
     # 3진법 수를 담을 문자열 생성
@@ -280,7 +280,7 @@ last_modified_at: 2022-10-26
     return three
   ```
 
-  * 예산
+* 예산
   ```python
   def solution(d, budget):
     d.sort()
@@ -314,7 +314,8 @@ last_modified_at: 2022-10-26
     return answer
   ```
   
-  * [1차] 비밀지도
+
+* [1차] 비밀지도
   ```python
   def solution(n, arr1, arr2):
     answer = []
@@ -337,7 +338,8 @@ last_modified_at: 2022-10-26
     return answer
   ```
 
-  * 최소직사각형
+
+* 최소직사각형
   ```python
   def solution(sizes):
     max_w = 0
@@ -353,14 +355,14 @@ last_modified_at: 2022-10-26
     return answer
   ```
 
-  * 문자열 내마음대로 정렬하기
+* 문자열 내마음대로 정렬하기
   ```python
   def solution(strings, n):
     answer = sorted(strings, key=lambda x: (x[n],x))
     return answer
   ```
 
-  * K번째 수
+* K번째 수
   ```python
   def solution(array, commands):
     answer = []
@@ -373,7 +375,7 @@ last_modified_at: 2022-10-26
     return answer
   ```
 
-  * 숫자 문자열과 영단어
+* 숫자 문자열과 영단어
   ```python
   def solution(s):
     numbers = {'zero':0, 'one':1, 'two':2, 'three':3, 'four':4,
@@ -394,7 +396,7 @@ last_modified_at: 2022-10-26
     return answer
   ```
 
-  * 두 개 뽑아서 더하기
+* 두 개 뽑아서 더하기
   ```python
   def solution(numbers):
     answer = []
@@ -406,7 +408,7 @@ last_modified_at: 2022-10-26
     return answer
   ```
 
-  * 삼총사
+* 삼총사
   ```python
   def solution(number):
     answer = 0
@@ -420,7 +422,7 @@ last_modified_at: 2022-10-26
     return answer
   ```
 
-  * 2016년
+* 2016년
   ```python
   import datetime as dt
   def solution(a, b):
@@ -431,7 +433,7 @@ last_modified_at: 2022-10-26
   ```
 
 
-  * 폰켓몬
+* 폰켓몬
   ```python
   def solution(nums):
     variable = len(list(set(nums)))
