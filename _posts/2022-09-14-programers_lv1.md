@@ -352,15 +352,7 @@ last_modified_at: 2022-10-24
     answer = max_w * max_h
     return answer
   ```
-<<<<<<< Updated upstream
-  
-=======
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> dd441b28ee2b758b4e140bca8d310bcd624cefbc
->>>>>>> Stashed changes
   * 문자열 내마음대로 정렬하기
   ```python
   def solution(strings, n):
@@ -522,4 +514,23 @@ def solution(nums):
             answer += 1
     
     return answer
+```
+
+* 실패율
+```python
+def solution(N, stages):
+    answer = []
+    players = len(stages)
+    
+    fail_rates = {}
+    for i in range(1, N+1):
+        if players:
+            fail_rates[i] = stages.count(i) / players
+            players -= stages.count(i)
+        else:
+            fail_rates[i] = 0
+
+    return sorted(fail_rates, key=lambda x: fail_rates[x], reverse=True)
+
+
 ```
