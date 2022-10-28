@@ -10,7 +10,7 @@ toc: true
 toc_icon: "cog"
 toc_sticky: true
 date: 2022-09-14
-last_modified_at: 2022-10-26
+last_modified_at: 2022-10-28
 ---
 
 
@@ -535,4 +535,33 @@ def solution(N, stages):
     return sorted(fail_rates, key=lambda x: fail_rates[x], reverse=True)
 
 
+```
+
+* [1차] 다트 게임
+```python
+def solution(dartResult):
+    points = []
+    tmp = ''
+    for i in dartResult:
+        if i.isnumeric():
+            tmp += i
+        elif i == 'S':
+            points.append(int(tmp))
+            tmp = ''
+        elif i == 'D':
+            points.append(int(tmp) ** 2)
+            tmp = ''
+        elif i == 'T':
+            points.append(int(tmp) ** 3)
+            tmp = ''
+        elif i == '*':
+            if len(points) > 1:
+                points[-2] = points[-2] * 2
+                points[-1] = points[-1] * 2
+            else:
+                points[-1] = points[-1] * 2
+        elif i == '#':
+            points[-1] = points[-1] * -1
+        
+    return sum(points)
 ```
