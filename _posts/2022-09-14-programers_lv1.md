@@ -10,7 +10,7 @@ toc: true
 toc_icon: "cog"
 toc_sticky: true
 date: 2022-09-14
-last_modified_at: 2022-10-28
+last_modified_at: 2022-10-31
 ---
 
 
@@ -565,3 +565,83 @@ def solution(dartResult):
         
     return sum(points)
 ```
+
+* 로또의 최고 순위와 최저 순위
+  ```python
+  def solution(dartResult):
+    rank = [6,6,5,4,3,2,1]
+    opportunity = lottos.count(0)
+    lottos.sort()
+    lottos = lottos[opportunity:]
+    count = 0
+    for i in lottos:
+        if i in win_nums:
+            count += 1
+    answer = [rank[(count+opportunity)], rank[count]]
+    return answer
+  ```
+
+  * 체육복
+  ```python
+  def solution(n, lost, reserve):
+    set_lost = sorted(list(set(lost)-set(reserve)))
+    set_reserve = sorted(list(set(reserve)-set(lost)))
+    copy_lost = set_lost.copy()
+
+    for i in set_lost:
+      if i -1 in set_reserve:
+        copy_lost.remove(i)
+        set_reserve.remove(i-1)
+      elif i+1 in set_reserve:
+        copy_lost.remove(i)
+        set_reserve.remove(i+1)
+      
+    
+    return n - len(copy_lost)
+  ```
+
+  * 키패드 누르기
+  ```python
+  def solution(numbers, hand):
+    answer = ''
+    phone = {1:[0,0], 2:[0,1], 3:[0,2],
+            4:[1,0], 5:[1,1], 6:[1,2],
+            7:[2,0], 8:[2,1], 9:[2,2],
+            '*':[3,0], 0:[3,1], '#':[3,2]}
+    
+    left_h = [3,0]
+    right_h = [3,2]
+    
+    for i in numbers:
+        if i in [1,4,7]:
+            answer += 'L'
+            left_h = phone[i]
+        elif i in [3,6,9]:
+            answer += 'R'
+            right_h = phone[i]
+        elif i in [2,5,8,0]:
+            loc = phone[i]
+            left_dist = abs(left_h[0]-loc[0]) + abs(left_h[1]-loc[1])
+            right_dist = abs(right_h[0]-loc[0]) + abs(right_h[1]-loc[1])
+            
+            if left_dist < right_dist:
+                answer += 'L'
+                left_h = phone[i]
+            elif left_dist > right_dist:
+                answer += 'R'
+                right_h = phone[i]
+            elif left_dist == right_dist:
+                if hand == 'left':
+                    answer += 'L'
+                    left_h = phone[i]
+                else:
+                    answer += 'R'
+                    right_h = phone[i]
+                    
+            
+            
+        
+    
+    
+    return answer
+  ```
