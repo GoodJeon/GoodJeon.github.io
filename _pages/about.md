@@ -71,18 +71,19 @@ layout: single
   1. 서울시 소상공 상권 분석 시각화 및 창업자를 위한 상권 평가
 
      * 팀원, 주 역할 : Django
-
-     - [https://github.com/GoodJeon/MPJ_team6](https://github.com/GoodJeon/MPJ_team6)
+  
+     - 저장소 : [https://github.com/GoodJeon/MPJ_team6](https://github.com/GoodJeon/MPJ_team6)
+     - 시연 페이지 : [https://team-pj-1.herokuapp.com/](https://team-pj-1.herokuapp.com/)
 
   2. 교통사고다발지역 주변 시설 분석을 통한 사고유형 유추 및 교통 인프라 재고의 필요성
 
      * 팀장, 주 역할 : Django
      * 분반 프로젝트(엔지니어링 파트)로 1위 수상
 
-     * [https://github.com/cshun1006/DI](https://github.com/cshun1006/DI)
+     - 저장소 : [https://github.com/cshun1006/DI](https://github.com/cshun1006/DI)
 
   3. 서울시 맛집 공유 플랫폼 먹잘알😋
 
      * 팀원, 주 역할 : Django
 
-     - [https://github.com/codnjs3575/Final_Team04](https://github.com/codnjs3575/Final_Team04)
+     - 저장소 : [https://github.com/codnjs3575/Final_Team04](https://github.com/codnjs3575/Final_Team04)
