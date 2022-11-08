@@ -49,6 +49,7 @@ layout: single
 
 
 ## Certificates & License(자격증)
+- ADsP
 - SQLD
 - 컴퓨터활용능력 2급
 - KBI금융DT(Blue)
