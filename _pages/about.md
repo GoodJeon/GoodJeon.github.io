@@ -9,7 +9,7 @@ layout: single
 ## Abstract(소개글)
 
 😀 안녕하세요?  
-데이터 관련 직무로 취업을 희망하는 취준생입니다.
+금융이 도메인인 개발자입니다.
 흐름에 따라가는 굿전이 되겠습니다. 감사합니다.
 
 * 메일 주소 : 513ehdwnsl@gmail.com
@@ -47,6 +47,7 @@ layout: single
 
 
 ## Certificates & License(자격증)
+- 정보처리기사
 - ADsP
 - SQLD
 - 컴퓨터활용능력 2급
@@ -61,6 +62,7 @@ layout: single
 
 ## Experiences(경험)
 - 한국평가데이터 데이터플랫폼센터 인턴 : 2022.08.01 ~ 2022.11.30
+- 금융기관 IT : 2023.01.01 ~
 
 
 ## Projects(프로젝트)
